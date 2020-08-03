@@ -7,4 +7,5 @@ fi
 
 mkdir ~/.kube
 echo "$INPUT_KUBECONFIG" > ~/.kube/config
+cat ~/.kube/config
 kubectl get pods --all-namespaces
