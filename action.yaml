@@ -12,5 +12,5 @@ inputs:
     description: 'Content of ~/.kube/config'
     required: true
 runs:
-  using: 'Docker'
+  using: 'docker'
   image: 'Dockerfile'
