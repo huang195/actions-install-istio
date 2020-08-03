@@ -13,4 +13,4 @@ inputs:
     required: true
 runs:
   using: 'Docker'
-  main: 'Dockerfile'
+  image: 'Dockerfile'
