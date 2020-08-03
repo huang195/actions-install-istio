@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 if [ -z $KUBECONFIG ]; then
   echo "KUBECONFIG is expected, exiting..."
