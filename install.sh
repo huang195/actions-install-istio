@@ -1,5 +1,7 @@
 #!/bin/sh
 
+env
+
 if [ -z "$KUBECONFIG" ]; then
   echo "KUBECONFIG is expected, exiting..."
   exit 1
