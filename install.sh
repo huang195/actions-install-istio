@@ -7,3 +7,4 @@ fi
 
 mkdir ~/.kube
 echo "$INPUT_KUBECONFIG" > ~/.kube/config
+kubect get pods --all-namespaces
