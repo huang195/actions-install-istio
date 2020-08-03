@@ -1,11 +1,9 @@
 #!/bin/sh
 
-env
-
-if [ -z "$KUBECONFIG" ]; then
+if [ -z "$INPUT_KUBECONFIG" ]; then
   echo "KUBECONFIG is expected, exiting..."
   exit 1
 fi
 
 mkdir ~/.kube
-echo "$KUBECONFIG" > ~/.kube/config
+echo "$INPUT_KUBECONFIG" > ~/.kube/config
