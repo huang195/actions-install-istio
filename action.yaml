@@ -1,0 +1,16 @@
+name: 'Install Istio in an existing Kubernetes cluster'
+description: 'This action installs Istio in an existing Kubernetes cluster'
+author: 'Hai Huang'
+branding:
+  icon: anchor
+  color: blue
+inputs:
+  istio version:
+    description: 'Version of Istio to deploy'
+    required: true
+  kubeconfig:
+    description: 'Content of ~/.kube/config'
+    required: true
+runs:
+  using: 'Docker'
+  main: 'Dockerfile'
