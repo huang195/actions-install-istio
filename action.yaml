@@ -7,7 +7,8 @@ branding:
 inputs:
   istio version:
     description: 'Version of Istio to deploy'
-    required: true
+    required: false
+    default: '1.6.3'
   kubeconfig:
     description: 'Content of ~/.kube/config'
     required: true

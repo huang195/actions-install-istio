@@ -9,7 +9,7 @@ if [ -z "$INPUT_KUBECONFIG" ]; then
   exit 1
 fi
 
-if [-z "$INPUT_ISTIO_VERSION" ]; then
+if [ -z "$INPUT_ISTIO_VERSION" ]; then
   echo "ISTIO_VERSION input parameter is not set, exiting..."
   exit 1
 fi
