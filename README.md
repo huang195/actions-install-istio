@@ -5,6 +5,8 @@ Install Istio
 
 ## Usage
 
+Istio requires a Kubernetes cluster to run. You can use any Github Actions that installs a Kubernetes cluster before running this action. An example is shown below.
+
 ### Basic
 
 ```yaml
