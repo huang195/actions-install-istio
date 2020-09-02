@@ -29,7 +29,7 @@ jobs:
         id: kubeconfig
         run: a="$(cat ~/.kube/config)"; a="${a//'%'/'%25'}"; a="${a//$'\n'/'%0A'}"; a="${a//$'\r'/'%0D'}"; echo "::set-output name=config::$a"
       - name: Install Istio
-        uses: huang195/actions-install-istio@master
+        uses: huang195/actions-install-istio@v1.0.0
         with:
           kubeconfig: "${{steps.kubeconfig.outputs.config}}"
           istio version: '1.6.3'
