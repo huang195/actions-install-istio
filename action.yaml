@@ -1,5 +1,5 @@
-name: 'Install Istio in an existing Kubernetes cluster'
-description: 'This action installs Istio in an existing Kubernetes cluster'
+name: 'Install Istio'
+description: 'This action installs Istio'
 author: 'Hai Huang'
 branding:
   icon: anchor
