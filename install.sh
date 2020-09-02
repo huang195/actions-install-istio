@@ -31,15 +31,18 @@ kubectl get pods --all-namespaces
 
 
 #############################################################
-# Install Istio
+# Download and install Istio
 #############################################################
 
 curl -L https://istio.io/downloadIstio | ISTIO_VERSION=${INPUT_ISTIO_VERSION} sh -
 istio-${INPUT_ISTIO_VERSION}/bin/istioctl version
 
 # Disable Kiali and Grafana as it is non-interactive
-istio-${INPUT_ISTIO_VERSION}/bin/istioctl manifest apply --set profile=demo \
---set values.kiali.enabled=false --set values.grafana.enabled=false
+istio-${INPUT_ISTIO_VERSION}/bin/istioctl manifest apply \
+--set profile=${INPUT_ISTIO_PROFILE} \
+--set values.kiali.enabled=false \
+--set values.grafana.enabled=false \
+${INPUT_ISTIO_ARGS}
 
 # Add a delay here so `kubectl wait` below is gated to Istio pods correctly
 #sleep 1

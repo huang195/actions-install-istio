@@ -6,9 +6,17 @@ branding:
   color: blue
 inputs:
   istio version:
-    description: 'Version of Istio to deploy'
+    description: 'Istio version to install'
     required: false
     default: '1.6.3'
+  istio profile:
+    description: "Istio profile when installing"
+    required: false
+    default: "demo"
+  istio args:
+    description: "Istio install parameters"
+    required: false
+    default: ""
   kubeconfig:
     description: 'Content of ~/.kube/config'
     required: true
